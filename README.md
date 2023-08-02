@@ -14,6 +14,7 @@ A companion library to Point-Free's [`swift-dependencies`](https://github.com/po
 The library currently proposes a few low-level dependencies to interface with:
 - `Accessibility`, an abstraction over `UIAccessibility`;
 - `Application`, an abstraction over `UIApplication.shared`;
+- `AssertionDependency`, to abstract `assert(…)` calls and promote them to failures when testing;
 - `BundleInfo`, an abstraction over the app's `info.plist`;
 - `Codable`, to encode/decode `Codable` types to `Data`;
 - `Compression`, to compress/decompress `Data` using the `Compression framework;
@@ -326,7 +327,7 @@ https://github.com/tgrapperon/swift-dependencies-additions
 If you want to use DependenciesAdditions in a SwiftPM project, it's as simple as adding it to your Package.swift:
 ```swift
 dependencies: [
-  .package(url: "https://github.com/tgrapperon/swift-dependencies-additions", from: "0.1.0")
+  .package(url: "https://github.com/tgrapperon/swift-dependencies-additions", from: "1.0.0")
 ]
 ```
 
